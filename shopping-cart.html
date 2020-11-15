@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/index.js" type="module" defer></script>
+    <title>Petch - Главная страница</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-block">
+            <a href="index.html" class="header-block__logo">
+                <svg class="icon">
+                    <use xlink:href="image/icons/icons.svg#logo-menu"></use>
+                </svg>
+            </a>
+            <nav class="header-nav">
+                <div class="header-nav__menu">
+                    <a href="#" class="header-nav__link">Корзина</a>
+                    <a href="./instruction.html" class="header-nav__link">Инструкция</a>
+                    <a href="./delivery.html" class="header-nav__link">Доставка</a>
+                </div>
+                <div class="header-nav__social">
+                    <a href="#" class="header-nav__social-link">
+                        <svg class="icon" width="30" height="30">
+                            <use xlink:href="image/icons/icons.svg#instagram"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="header-nav__social-link">
+                        <svg class="icon" width="26" height="30">
+                            <use xlink:href="image/icons/icons.svg#telegram"></use>
+                        </svg>
+                    </a>
+                </div>
+            </nav>
+
+            <div class="mobail-menu">
+                <span class="mobail-menu__btn"></span>
+            </div>
+        </div>
+    </header>
+
+    <section class="shop">
+        <div class="shop-block">
+            <div class="shop-catd">
+                <h1 class="shop__title">Корзина</h1>
+                <div class="shop__items">
+                    <div class="shop__item">
+                        <img src="./image/pink.jpg" alt="" class="shop-item__img">
+                        <div class="shop-item__description">
+                            <p class="shop-item__name">Pink</p>
+                            <p class="shop-item__weight">10 г</p>
+                        </div>
+                        <span class="shop-item__remove">-</span>
+                        <input type="text" class="shop-item__number" value="10">
+                        <span class="shop-item__add">+</span>
+                        <p class="shop-item__cost"><span>180</span> р.</p>
+                    </div>
+                    <div class="shop__item">
+                        <img src="./image/pink.jpg" alt="" class="shop-item__img">
+                        <div class="shop-item__description">
+                            <p class="shop-item__name">Pink</p>
+                            <p class="shop-item__weight">10 г</p>
+                        </div>
+                        <span class="shop-item__remove">-</span>
+                        <input type="text" class="shop-item__number" value="10">
+                        <span class="shop-item__add">+</span>
+                        <p class="shop-item__cost"><span>180</span> р.</p>
+                    </div>
+                </div>
+                <p class="shop-item__summ">Итого: <span>360</span> р.</p>
+            </div>
+            <div class="shop-form">
+                <h1 class="shop__title">Данные заказа</h1>
+                <form action="" class="form-personal-data">
+                    <label for="surname">Фамилия</label>
+                    <input id="surname" type="text">
+                    <label for="name">Имя</label>
+                    <input id="name" type="text">
+                    <label for="patronymic">Отчество</label>
+                    <input id="patronymic" type="text">
+                    <label for="email">Почта</label>
+                    <input id="email" type="text">
+                    <label for="phone">Телефон</label>
+                    <input id="phone" type="text">
+                </form>
+            </div>
+        </div>
+        <div class="shop-block">
+            <div class="shop-delivery">
+                <h1 class="shop__title">Доставка</h1>
+                <form action="" class="form-delivery">
+                    <label><input type="radio"> Самовывоз</label>
+                    <label><input type="radio"> СДЭК</label>
+                    <label><input type="radio"> Boxberry</label>
+                </form>
+            </div>
+            <div class="shop-other">
+                <label for="promo">Промокод</label>
+                <input id="promo" type="text">
+                <label for="comment">Комментарий</label>
+                <input id="comment" type="text">
+                <p class="shop__summ">Сумма: <span>360</span> р.</p>
+                <p class="shop__delivery-summ">Доставка: <span>290</span> р.</p>
+                <h2 class="shop__gen-summ">Итоговая сумма: <span>650</span> р.</h2>
+                <button class="shop__btn">Заказать</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-block">
+            <div class="footer-block__logo">
+                <svg class="icon">
+                    <use xlink:href="image/icons/icons.svg#logo-menu"></use>
+                </svg>
+            </div>
+            <span class="footer-block__support">
+                <a href="mailto:support@peach.ru">support@peach.ru</a> техподдержка
+            </span>
+        </div>
+    </footer>
+
+    <div class="modal hide">
+        <div class="modal__content">
+            <button class="modal__close">
+                <svg class="icon">
+                    <use xlink:href="image/icons/icons.svg#close"></use>
+                  </svg>
+            </button>
+            <div class="modal__block modal__block_left">
+                <div class="modal__img" style="background: #265baa;"></div>
+                <span class="modal__name">BLUE</span>
+            </div>
+            <div class="modal__block modal__block_right">
+                <h2 class="modal__title">Blue</h2>
+                <span class="modal__price">180p</span>
+                <div class="modal__select select-block">
+                    <span class="select-block__title">Выберите объем</span>
+                    <select class="select-block__select">
+                        <option value="10" class="select-block__item">10 гр</option>
+                        <option value="25" class="select-block__item">25 гр</option>
+                        <option value="50" class="select-block__item">50 гр</option>
+                        <option value="100" class="select-block__item">100 гр</option>
+                    </select>
+                </div>
+                <button class="modal__btn">В КОРЗИНУ</button>
+                <p class="modal__description">
+                    Краситель для тканей растительного происхождения (хлопок, лён, вискоза). Подходит для домашнего использования.
+                    <br><br>
+                    На окрашивание одной футболки в среднем необходимо 2-3 гр. красителя.
+                    <br><br>
+                    Чтобы достичь максимальной яркости изделия, смешайте раствор исходя из пропорции 3 гр. на 100 мл воды. Также при уменьшении концентрацииможно достичь более светлых оттенков.
+                    <br><br>
+                    Не забудьте приобрести активатор. Он необходим в процессе окрашивания.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
