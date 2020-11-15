@@ -111,6 +111,10 @@ input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -970,6 +974,113 @@ input {
   }
   .delivery-block__first {
     padding-top: 15px;
+  }
+}
+
+.instruction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 1200px;
+  width: 95%;
+  margin: auto;
+}
+
+.instruction-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px;
+}
+
+.instruction-block:nth-child(even) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  padding-top: 0;
+}
+
+.instruction-block__img {
+  width: 50%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.instruction-block__text {
+  width: 50%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  padding-left: 40px;
+}
+
+.instruction-block__title {
+  position: relative;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 33px;
+  text-align: center;
+  margin-bottom: 54px;
+}
+
+.instruction-block__title::after {
+  content: '';
+  width: 121px;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.instruction-block__list {
+  list-style-type: circle;
+  color: #fff;
+}
+
+.instruction-block__item {
+  font-size: 18px;
+  line-height: 40px;
+  line-height: 24px;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 871px) {
+  .instruction-block {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .instruction-block__img {
+    width: 100%;
+  }
+  .instruction-block__text {
+    width: 100%;
+  }
+  .instruction-block__item {
+    font-size: 14px;
+    line-height: 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */
