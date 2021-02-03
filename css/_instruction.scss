@@ -55,6 +55,7 @@
         line-height: 40px;
         line-height: 24px;
         margin-bottom: 15px;
+        text-align: justify;
     }
 }
 @media (max-width: 871px) {
@@ -67,11 +68,20 @@
 
         &__text {
             width: 100%;
+            padding-left: 0;
+            padding-right: 0;
         }
 
         &__item {
             font-size: 14px;
             line-height: 30px;
         }
+    }
+}
+
+@media (max-width: 400px) {
+    .instruction-block__title {
+        font-size: 20px;
+        line-height: 25px;
     }
 }

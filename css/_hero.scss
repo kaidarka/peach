@@ -27,8 +27,27 @@
         max-height: 341px;
         width: 50%;
         height: 52%;
+        
     }
-
+    &__div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 5px solid #fff;
+        & hr{
+            width: 150px;
+            border: none;
+            height: 2px;
+            background-color: #fff;
+            color: #fff;
+        }
+        &-text{
+            text-transform: uppercase;
+            font-size: 24px;
+            line-height: 30px;
+        }
+    }
     &-delivery{
         background: url(../image/bg-delivery.jpg) no-repeat center center / cover;
     }

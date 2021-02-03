@@ -139,6 +139,30 @@
     }
 }
 
+.link-shopping-cart{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.icon-shopping-cart{
+    height: 33px;
+    width: 33px;
+}
+.number-shopping-cart{
+    position: absolute;
+    display: block;
+    width: 18px;
+    height: 18px;
+    padding-top: 4px;
+    text-align: center;
+    top: -3px;
+    right: -7px;
+    font-size: 13px;
+    line-height: 13px;
+    background: #FF1F1F;
+    border-radius: 20px;
+}
+
 @media (max-width: 821px) {
     .header {
         &-nav {
@@ -177,5 +201,11 @@
 
     .mobail-menu {
         display: flex;
+    }
+}
+
+@media (max-width: 400px) {
+    .header-nav__link{
+        font-size: 20px;
     }
 }

@@ -8,6 +8,7 @@
         height: 587px;
         padding-top: 30px;
         justify-content: start;
+        align-items: center;
         &__first{
             padding-top: 82px;
         }
@@ -29,7 +30,7 @@
         font-style: normal;
         font-weight: normal;
         font-size: 30px;
-        line-height: 33px;
+        line-height: 40px;
         text-align: center;
         position: relative;
         margin-bottom: 56px;
@@ -51,6 +52,7 @@
         font-size: 16px;
         line-height: 28px;
         margin-bottom: 20px;
+        max-width: 800px;
     }
 }
 
@@ -61,5 +63,12 @@
         &__first{
             padding-top: 15px;
         }
+    }
+}
+
+@media (max-width: 500px){
+    .delivery__title{
+        font-size: 18px;
+        line-height: 30px;
     }
 }

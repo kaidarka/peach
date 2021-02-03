@@ -20,9 +20,13 @@
             </a>
             <nav class="header-nav">
                 <div class="header-nav__menu">
-                    <a href="./shopping-cart.html" class="header-nav__link">Корзина</a>
+                    <a href="/" class="header-nav__link">Каталог</a>
                     <a href="./instruction.html" class="header-nav__link">Инструкция</a>
                     <a href="./delivery.html" class="header-nav__link">Доставка</a>
+                    <a href="./shopping-cart.html" class="header-nav__link link-shopping-cart">
+                        <img src="./image/icons/shopping-cart.svg" alt="" class="icon-shopping-cart">
+                        <span class="number-shopping-cart">3</span>
+                    </a>
                 </div>
                 <div class="header-nav__social">
                     <a href="#" class="header-nav__social-link">
@@ -72,7 +76,7 @@
         </div>
     </section>
 
-    <section class="catalog dyes">
+    <section id="catalog-scroll" class="catalog dyes">
         <h2 class="catalog__title">КРАСИТЕЛИ</h2>
         <div class="catalog__cads">
             <div class="catalog__card dyes__card" data-color="#265baa">
@@ -210,7 +214,6 @@
                         <option value="10" class="select-block__item">10 гр</option>
                         <option value="25" class="select-block__item">25 гр</option>
                         <option value="50" class="select-block__item">50 гр</option>
-                        <option value="100" class="select-block__item">100 гр</option>
                     </select>
                 </div>
                 <button class="modal__btn">В КОРЗИНУ</button>
