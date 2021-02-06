@@ -5,8 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+    <script src="./script/scroll.js" defer></script>
+    <script src="./script/swiper.js" defer></script>
     <script src="script/index.js" type="module" defer></script>
+
     <title>Petch - Главная страница</title>
 </head>
 
@@ -20,7 +25,7 @@
             </a>
             <nav class="header-nav">
                 <div class="header-nav__menu">
-                    <a href="#" class="header-nav__link">Каталог</a>
+                    <a href="#catalog" id="scroll" class="header-nav__link">Каталог</a>
                     <a href="./instruction.html" class="header-nav__link">Инструкция</a>
                     <a href="./delivery.html" class="header-nav__link">Доставка</a>
                     <a href="./shopping-cart.html" class="header-nav__link link-shopping-cart">
@@ -76,7 +81,7 @@
         </div>
     </section>
 
-    <section id="catalog-scroll" class="catalog dyes">
+    <section id="catalog" class="catalog dyes">
         <h2 class="catalog__title">КРАСИТЕЛИ</h2>
         <div class="catalog__cads">
             <div class="catalog__card dyes__card" data-color="#265baa">
@@ -202,8 +207,27 @@
                   </svg>
             </button>
             <div class="modal__block modal__block_left">
-                <div class="modal__img" style="background: #265baa;"></div>
-                <span class="modal__name">BLUE</span>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" >
+                            <img src="./image/pink.jpg"  alt="">
+                        </div>
+                        <div class="swiper-slide" >
+                            <img src="./image/pink.jpg"  alt="">
+                        </div>
+                        <div class="swiper-slide" >
+                            <img src="./image/pink.jpg"  alt="">
+                        </div>
+                    </div>
+                    
+                    <span class="modal-slider__prev">
+                        <img src="./image/icons/left-arrow.svg" alt="icon: left-arrow">
+                    </span>
+                    <span class="modal-slider__next">
+                        <img  src="./image/icons/right-arrow.svg" alt="icon: right-arrow">
+                    </span>
+                </div>
+                
             </div>
             <div class="modal__block modal__block_right">
                 <h2 class="modal__title">Blue</h2>

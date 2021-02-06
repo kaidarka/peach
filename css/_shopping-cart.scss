@@ -182,7 +182,7 @@
         line-height: 29px;
         margin-bottom: 10px;
     }
-    & input{
+    & input, textarea{
         height: 55px;
         background: none;
         border: 2px solid #FFFFFF;
@@ -191,6 +191,9 @@
         font-size: 26px;
         max-width: 500px;
         padding: 0 10px;
+    }
+    & textarea{
+        padding-top: 9px;
     }
 }
 @media (max-width: 821px){
@@ -231,10 +234,10 @@
         font-size: 20px;
     }
     .form-personal-data{
-        & label, input {
+        & label, input, textarea {
             font-size: 20px;
         }
-        & input{
+        & input, textarea{
             height: 40px;
         }
     }

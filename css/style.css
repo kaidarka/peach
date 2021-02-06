@@ -526,7 +526,7 @@ input {
   display: block;
   width: 18px;
   height: 18px;
-  padding-top: 4px;
+  padding-top: 3.5px;
   text-align: center;
   top: -3px;
   right: -7px;
@@ -681,6 +681,22 @@ input {
           justify-content: center;
 }
 
+.modal-slider__next {
+  position: absolute;
+  top: 135px;
+  right: 5px;
+  z-index: 99;
+  width: 30px;
+}
+
+.modal-slider__prev {
+  position: absolute;
+  top: 135px;
+  left: 5px;
+  z-index: 99;
+  width: 30px;
+}
+
 .modal__content {
   position: relative;
   max-width: 1160px;
@@ -720,6 +736,7 @@ input {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
 }
 
 .modal__block_left {
@@ -740,7 +757,6 @@ input {
   max-height: 300px;
   width: 100%;
   height: 300px;
-  margin-bottom: 24px;
 }
 
 .modal__name {
@@ -818,6 +834,16 @@ input {
 
 .select-block__item:focus {
   background: #7b7575;
+}
+
+.swiper-container {
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slideimg {
+  width: 100%;
+  height: 100%;
 }
 
 @media (max-width: 1025px) {
@@ -985,8 +1011,8 @@ input {
   max-width: 1200px;
   width: 95%;
   margin: auto;
-  height: 587px;
-  padding-top: 30px;
+  min-height: 350px;
+  padding: 30px 0px;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
@@ -996,7 +1022,7 @@ input {
 }
 
 .delivery-block__first {
-  padding-top: 82px;
+  padding-top: 30px;
 }
 
 .delivery-block__last {
@@ -1435,7 +1461,7 @@ input {
   margin-bottom: 10px;
 }
 
-.shop-other input {
+.shop-other input, .shop-other textarea {
   height: 55px;
   background: none;
   border: 2px solid #FFFFFF;
@@ -1444,6 +1470,10 @@ input {
   font-size: 26px;
   max-width: 500px;
   padding: 0 10px;
+}
+
+.shop-other textarea {
+  padding-top: 9px;
 }
 
 @media (max-width: 821px) {
@@ -1480,10 +1510,10 @@ input {
   .shop-item__number {
     font-size: 20px;
   }
-  .form-personal-data label, .form-personal-data input {
+  .form-personal-data label, .form-personal-data input, .form-personal-data textarea {
     font-size: 20px;
   }
-  .form-personal-data input {
+  .form-personal-data input, .form-personal-data textarea {
     height: 40px;
   }
 }
