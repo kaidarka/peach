@@ -841,9 +841,9 @@ input {
   height: 300px;
 }
 
-.swiper-slideimg {
-  width: 100%;
-  height: 100%;
+.swiper-slide img {
+  width: 300px;
+  height: 300px;
 }
 
 @media (max-width: 1025px) {
@@ -857,6 +857,7 @@ input {
   }
   .modal__block_left {
     margin-right: 0;
+    margin-top: 15px;
   }
   .modal__block_right {
     -webkit-box-orient: horizontal;
@@ -871,6 +872,7 @@ input {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     height: auto;
+    margin-top: 20px;
   }
   .modal__name {
     display: none;
@@ -987,6 +989,23 @@ input {
   .select-block__title {
     font-size: 14px;
     color: #FFFFFF;
+  }
+}
+
+@media (max-width: 400px) {
+  .swiper-slide img {
+    width: 250px;
+    height: 250px;
+  }
+  .swiper-container {
+    width: 250px;
+    height: 250px;
+  }
+  .modal-slider__next {
+    top: 115px;
+  }
+  .modal-slider__prev {
+    top: 115px;
   }
 }
 
