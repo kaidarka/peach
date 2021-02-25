@@ -49,7 +49,8 @@
             font-size: 18px;
             line-height: 33px;
             text-transform: uppercase;
-
+            transition: all .3s;
+            
             &:not(:last-child) {
                 margin-right: 40px;
             }
@@ -162,6 +163,14 @@
     background: #FF1F1F;
     border-radius: 20px;
 }
+.link-shopping-cart:hover{
+    transform: scale(1.1);
+    & .number-shopping-cart{
+        color: #fff;
+    }
+}
+
+
 
 @media (max-width: 821px) {
     .header {

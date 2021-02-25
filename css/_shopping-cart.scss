@@ -96,8 +96,6 @@
         display: flex;
         justify-content: space-between;
     }
-    &__cost {
-    }
     &__summ{
         margin-top: 35px;
         text-align: right;
@@ -147,6 +145,7 @@
         font-size: 26px;
         line-height: 29px;
         margin-bottom: 10px;
+        display: flex;
     }
     & input{
         height: 55px;
@@ -155,7 +154,7 @@
         margin-bottom: 10px;
         color: #fff;
         font-size: 26px;
-        max-width: 500px;
+        max-width: 400px;
         padding: 0 10px;
     }
 }
